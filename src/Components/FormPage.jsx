@@ -19,6 +19,7 @@ const FormPage = () => {
 
     try {
       // Sending the data to the backend
+      // Mere sa nahe bana hackathon per ma jaldi bana lo gaa 
       const response = await axios.post('http://localhost:5000/api/submit', formData);
       if (response.status === 200) {
         setMessage('Form submitted successfully!');

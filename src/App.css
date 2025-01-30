@@ -3,6 +3,12 @@
   margin: 0 auto;
   text-align: center;
 }
+.blue{
+  color: #0d6efd;
+}
+.green{
+  color: #0aad0a;
+}
 
 .logo {
   height: 6em;

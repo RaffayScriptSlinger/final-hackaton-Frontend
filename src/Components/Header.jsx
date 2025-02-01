@@ -22,6 +22,7 @@
 //   );
 // }
 import { useState } from "react";
+import { GiSkullCrossedBones } from "react-icons/gi";
 
 
 export default function Header() {
@@ -45,7 +46,7 @@ export default function Header() {
           className="md:hidden ml-auto text-gray-700"
           onClick={() => setIsOpen(!isOpen)}
         >
-          
+         <GiSkullCrossedBones />
         </button>
 
        

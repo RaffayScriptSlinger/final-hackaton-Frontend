@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { userCredential } from "../Context/userContext";
+import { userCredential } from "../../Context/userContext";
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 
 const SignupForm = () => {
   const [username, setUsername] = useState("");
@@ -44,9 +45,9 @@ console.log("SignUp user => " , user)
         </form>
         <p className="mt-4 text-center text-sm text-gray-600">
           Already have an account?{" "}
-          <a href="/login" className="text-blue-500 hover:underline">
+          <Link to={"/Login"} className="text-blue-500 hover:underline">
             Login here
-          </a>
+          </Link>
         </p>
       </div>
     </div>

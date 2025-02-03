@@ -22,7 +22,8 @@
 //   );
 // }
 import { useState } from "react";
-import { GiSkullCrossedBones } from "react-icons/gi";
+import { Link } from "react-router-dom";
+
 
 
 export default function Header() {
@@ -46,8 +47,8 @@ export default function Header() {
           className="md:hidden ml-auto text-gray-700"
           onClick={() => setIsOpen(!isOpen)}
         >
-         <GiSkullCrossedBones />
-         //   Hello This is a commit
+          { isOpen ? 0 : 1}
+
         </button>
 
        
@@ -56,11 +57,11 @@ export default function Header() {
             isOpen ? "block" : "hidden"
           } md:flex flex-col md:flex-row md:items-center md:ml-auto text-base`}
         >
-          <a className="mr-5  font-semibold">Login</a>
-          <a className="mr-5  font-semibold">Sign Up</a>
-          <a className="mr-5  hover:text-indigo-500 font-semibold">
+          <Link className="mr-5  font-semibold" to={"/Signup"} >Sign Up</Link>
+          <Link className="mr-5  font-semibold" to={"/Login"} >Login</Link>
+          <Link className="mr-5  hover:text-indigo-500 font-semibold" to={"/calculator"}>
             Loan Calculator
-          </a>
+          </Link>
         </div>
       </div>
     </header>

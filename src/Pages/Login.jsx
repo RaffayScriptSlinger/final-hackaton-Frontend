@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { userCredential } from "../Context/userContext";
+import { userCredential } from "../../Context/userContext";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 

@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes,Route } from 'react-router-dom'
 import './App.css'
-import Signup from '../Pages/SignUp'
-import Login from '../Pages/Login'
+import Login from "./Pages/Login"
+import SignupForm from "./Pages/SignUp"
 import Home from './Components/Home'
 import Layout from './Components/layout'
 import Wedding from './Components/SubCategories/wedding'
@@ -9,6 +9,7 @@ import HomeConstruction from './Components/SubCategories/HomeConstruction'
 import Business from './Components/SubCategories/Buisness'
 import FormPage from './Components/FormPage'
 import Education from './Components/SubCategories/Education'
+import LoanCalculator from './Components/LoanCalculator'
 
 function App() {
   
@@ -17,7 +18,7 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route/>
-      <Route path ="/Signup" element ={<Signup/>}/>
+      <Route path ="/Signup" element ={<SignupForm/>}/>
       <Route path='/Login' element= {<Login/>}/>
       <Route path='/' element ={<Layout><Home/></Layout>  } />
       <Route path='/SubCategories/wedding'element ={<Wedding/>}  />
@@ -25,6 +26,7 @@ function App() {
       <Route path='/SubCategories/Buisness' element= {<Business/>} />
       <Route path='/SubCategories/Education' element = {<Education/>}/>
       <Route path='/FormPage' element = {<FormPage/>} />
+      <Route path='/calculator' element = {<LoanCalculator/>} />
     </Routes>
     </BrowserRouter>
     </>

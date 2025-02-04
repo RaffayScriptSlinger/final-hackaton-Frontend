@@ -60,8 +60,8 @@ export default function Header() {
           <Link className="mr-5  font-semibold" to={"/Signup"} >Sign Up</Link>
           <Link className="mr-5  font-semibold" to={"/Login"} >Login</Link>
           <Link className="mr-5  hover:text-indigo-500 font-semibold" to={"/calculator"}>
-            Loan Calculator
-          </Link>
+            Loan Calculator Raffay
+           </Link>
         </div>
       </div>
     </header>

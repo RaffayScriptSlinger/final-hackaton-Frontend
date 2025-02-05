@@ -59,7 +59,8 @@ const LoanCalculator = () => {
   };
 
   return (
-    <div className="max-w-3xl mx-auto p-8 bg-white rounded-lg shadow-md">
+    <div className="p-12">
+       <div className="max-w-3xl mx-auto  bg-white rounded-lg shadow-md">
       <h2 className="text-2xl font-semibold text-center mb-4">Loan Calculator</h2>
 
       {/* Loan Category Selection */}
@@ -149,6 +150,9 @@ const LoanCalculator = () => {
         </div>
       )}
     </div>
+
+    </div>
+   
   );
 };
 

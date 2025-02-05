@@ -26,7 +26,7 @@ function App() {
       <Route path='/SubCategories/Buisness' element= {<Business/>} />
       <Route path='/SubCategories/Education' element = {<Education/>}/>
       <Route path='/FormPage' element = {<FormPage/>} />
-      <Route path='/calculator' element = {<LoanCalculator/>} />
+      <Route path='/calculator' element = { <Layout> <LoanCalculator/></Layout>} />
     </Routes>
     </BrowserRouter>
     </>
